@@ -14,7 +14,7 @@ public class Calculadora {
             int n2 = sc.nextInt();
             int saida;
             System.out.println("que calculo deseja efetuar entre esses números?");
-            System.out.println("1- Dividir\n2- Multiplicar\n3- Somar\n 4- Subtrair");
+            System.out.println("1- Dividir\n2- Multiplicar\n3- Somar\n4- Subtrair");
 
             entrada = sc.nextInt();
 
