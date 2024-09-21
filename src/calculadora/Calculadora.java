@@ -12,7 +12,7 @@ public class Calculadora {
             int n1 = sc.nextInt();
             System.out.println("Digite o segundo número: ");
             int n2 = sc.nextInt();
-            int saida;
+
             System.out.println("que calculo deseja efetuar entre esses números?");
             System.out.println("1- Dividir\n2- Multiplicar\n3- Somar\n4- Subtrair");
 
