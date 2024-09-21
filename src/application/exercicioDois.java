@@ -5,7 +5,7 @@ public class exercicioDois {
         int x = 1;
         int soma = 0;
         while (x < 100) {
-            soma += x;x
+            soma += x;
             x += 2;
         }
         System.out.println(soma);
