@@ -14,13 +14,17 @@ public class Calculadora {
             int n2 = sc.nextInt();
             int saida;
             System.out.println("que calculo deseja efetuar entre esses números?");
-            System.out.println("1- Dividir\n2- Multiplicar\n3- Somar");
+            System.out.println("1- Dividir\n2- Multiplicar\n3- Somar\n 4- Subtrair");
 
             entrada = sc.nextInt();
 
             switch (entrada) {
                 case 1:
-                    System.out.println("O resultado da divisão entre " + n1 + " e " + n2 + " = " + divide(n1, n2));
+                    if (n2 == 0) {
+                        System.out.println("Não é possivel dividir por zero!");
+                    } else {
+                        System.out.println("O resultado da divisão entre " + n1 + " e " + n2 + " = " + divide(n1, n2));
+                    }
                     break;
                 case 2:
                     System.out.println("O resultado da multiplicação entre " + n1 + " e " + n2 + " = " + multiplica(n1, n2));
@@ -28,8 +32,12 @@ public class Calculadora {
                 case 3:
                     System.out.println("O resultado da soma entre " + n1 + " e " + n2 + " = " + somar(n1, n2));
                     break;
+                case 4:
+                    System.out.println("O resultado da subtração entre " + n1 + " e " + n2 + " = " + subtrai(n1, n2));
+                    break;
             }
-            System.out.println("Deseja continuar? 1 - Sim    2 - não");
+            System.out.println("Deseja continuar? 1-sim  2-não");
+
             x = sc.nextInt();
         }
     }
@@ -47,5 +55,9 @@ public class Calculadora {
 
     public static int somar(int a, int b) {
         return a + b;
+    }
+
+    public static int subtrai(int a, int b) {
+        return a - b;
     }
 }
